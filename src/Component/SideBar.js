@@ -3,8 +3,7 @@ import { useSelector } from 'react-redux'
 import "./CSSALL/SideBar.css"
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DuoOutlinedIcon from '@mui/icons-material/DuoOutlined';
-import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined';
-import VideoLibrarySharpIcon from '@mui/icons-material/VideoLibrarySharp';
+import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined'; 
 import HistoryOutlinedIcon from '@mui/icons-material/HistoryOutlined';
 import SmartDisplayOutlinedIcon from '@mui/icons-material/SmartDisplayOutlined';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
@@ -17,7 +16,6 @@ const SideBar = () => {
 const isMenuOpen = useSelector(store => store.app.isMenuOpen)
 
 if(!isMenuOpen) return null;
-
 
 
   return (
