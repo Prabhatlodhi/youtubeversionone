@@ -6,6 +6,12 @@
     cursor: pointer;
 }
 
+.header_wrapper{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  
+}
  
 
 .header_wrapper{
