@@ -1,0 +1,27 @@
+.allSideBar li{
+    padding: 5px 9px;
+    padding-left: 20px;
+    font-size: 18px; 
+}
+
+.allSideBar ul{
+    margin: 10px;
+}
+
+.allSideBar ul li{ 
+    display: flex; 
+    align-items: center; 
+}
+
+.allSideBar ul li span{ 
+    padding-left: 12px;
+}
+
+.allSideBar li:hover{
+     background-color: rgb(203, 203, 203);
+     border-radius: 8px;
+}
+
+.allSideBar{
+    width: 250px;
+}

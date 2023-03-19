@@ -1,0 +1,60 @@
+.imagelogo img{
+    width: 100px; 
+}
+
+.hamburgerIcon{
+    cursor: pointer;
+}
+
+ 
+
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px; 
+}
+
+ul li input{
+    width: 420px;
+    height: 38px;
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 14px;
+    border: 1px solid grey;
+    background-color: rgb(249, 249, 249);
+}
+
+.searchIcon{
+    text-align: center;
+    vertical-align: middle;
+    height: 38px;
+    border: 1px solid grey;
+    width: 75px;
+    padding-top: 2px;
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgb(210, 210, 210);
+}
+
+.userImage img{
+    width: 45px;
+}
+
+.voiceIcon{
+    margin-left: 9px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+
+.customli li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lastThree li{
+ margin: 0px 8px;
+}
+
+.first li{
+    margin: 0px 8px;
+   }

@@ -1,0 +1,9 @@
+.videoContainer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 82vh;
+    overflow-y: scroll; 
+    margin-top: 15px; 
+}

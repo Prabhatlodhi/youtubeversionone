@@ -1,0 +1,16 @@
+.buttonList ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.buttonList{
+    padding-left: 40px;
+}
+.buttonList button{
+    padding: 9px 9px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(234, 234, 234);
+    font-size: 16px;
+    margin: 1px 6px;
+}

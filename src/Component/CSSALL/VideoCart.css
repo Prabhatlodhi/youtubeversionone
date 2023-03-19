@@ -1,0 +1,23 @@
+.videoCard ul li{
+list-style: none;
+}
+
+.videoCard{
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    margin: 10px; 
+}
+
+.videoCard img{
+    width: 100%;
+}
+
+.channelTitle{
+    font-size: 14px; 
+    
+}
+
+.imageofthumbnail{
+    border-radius: 8px;
+}
