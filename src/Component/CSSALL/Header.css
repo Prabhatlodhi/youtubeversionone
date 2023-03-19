@@ -61,20 +61,20 @@ ul li input{
 
 .searchresultd{
 height: 400px;
-width: 560px;
-border: 2px solid red;
+width: 560px; 
 position: absolute;
 background-color: white;
 overflow-y: scroll;
 }
 
 .searchresultd ul {
-    height: 400px;
-border: 2px solid red;
+    height: 400px; 
 }
 
 .searchresultd ul li{
-    display: block;
+    display: flex;
+    align-items: center;
+    
     margin:  9px;
     padding: 5px;
     

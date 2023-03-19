@@ -4,7 +4,7 @@ import "./CSSALL/VideoCart.css";
 const VideoCart = ({ info }) => {
   // const { snippet, statistics} = info;
   // const { channelTitle, title, thumbnails} = snippet;statistics.viewCount
- 
+
   if (!info) {
     return null;
   }
@@ -15,24 +15,30 @@ const VideoCart = ({ info }) => {
         alt=""
         className="imageofthumbnail"
       />
-      <p></p>
       <ul>
         <li className="channelTitle">
           <b>{info?.snippet?.title}</b>
         </li>
-        <li className="chades">
-          <img
-            src={info?.snippet?.thumbnails?.default?.url}
-            alt=""
-            className="channelImage"
-          />
-          {info?.snippet?.channelTitle}
-        </li>
-        {/* <li>{info?.snippet?.channelTitle}</li> */}
-        <li className="chades">
-          {info?.statistics?.viewCount?.toLocaleString("en-US")} views
-        </li>
-      </ul>
+</ul>
+        <div className="sepration">
+          <div>
+            <img
+              src={info?.snippet?.thumbnails?.default?.url}
+              alt=""
+              className="channelImage"
+            />
+          </div>
+          <div>
+            <p className="chades">{info?.snippet?.channelTitle}</p>
+            <p className="chades">
+              {(info?.statistics?.viewCount)
+                .toString()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+              views
+            </p>
+          </div>
+        </div> 
+      
     </div>
   );
 };
