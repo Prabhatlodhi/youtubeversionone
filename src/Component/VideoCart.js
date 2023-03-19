@@ -4,7 +4,7 @@ import "./CSSALL/VideoCart.css";
 const VideoCart = ({ info }) => {
   // const { snippet, statistics} = info;
   // const { channelTitle, title, thumbnails} = snippet;statistics.viewCount
-console.log(info)
+ 
   if (!info) {
     return null;
   }
@@ -30,7 +30,7 @@ console.log(info)
         </li>
         {/* <li>{info?.snippet?.channelTitle}</li> */}
         <li className="chades">
-          {info?.statistics?.viewCount?.toLocaleString("en-US")}
+          {info?.statistics?.viewCount?.toLocaleString("en-US")} views
         </li>
       </ul>
     </div>
