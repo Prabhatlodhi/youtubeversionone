@@ -23,7 +23,7 @@ if(!isMenuOpen) return null;
   return (
     <div className='allSideBar'>
      <ul>
-     <Link to="/"> <li> <HomeOutlinedIcon/> <span>Home</span></li></Link>
+     <Link to="/" style={{textDecoration:"none", color:"black" }} > <li> <HomeOutlinedIcon/> <span>Home</span></li></Link>
       <li> <DuoOutlinedIcon/> <span>Shorts</span></li>
       <li> <SubscriptionsOutlinedIcon/> <span>Subscription</span></li>
      </ul>

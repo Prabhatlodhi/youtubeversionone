@@ -3,6 +3,7 @@ import "./CSSALL/VideoContainer.css";
 import { YOU_TUBE_API } from "./Utils/Constant";
 import VideoCart from "./VideoCart";
 import { Link } from "react-router-dom";
+import { AdVideoCard } from "./VideoCart";
 
 const VideoContainer = () => {
   const [videos, setVideos] = useState([]);
@@ -20,9 +21,10 @@ const VideoContainer = () => {
 
   return (
     <div className="videoContainer">
+    { videos && <AdVideoCard info={videos[32]}/>}
       {videos.map((video) => (
-        <Link to={"watch?v=" + video.id}>
-          <VideoCart info={video} key={video.id} />
+        <Link to={"watch?v=" + video.id} key={video.id} style={{textDecoration:"none", color:"black" }}  >
+          <VideoCart info={video} />
         </Link>
       ))}
     </div>
