@@ -8,6 +8,7 @@ const VideoCart = ({ info }) => {
   if (!info) {
     return null;
   }
+
   return (
     <div className="videoCard">
       <img
@@ -15,30 +16,31 @@ const VideoCart = ({ info }) => {
         alt=""
         className="imageofthumbnail"
       />
-      <ul>
-        <li className="channelTitle">
-          <b>{info?.snippet?.title}</b>
-        </li>
-</ul>
-        <div className="sepration">
-          <div>
-            <img
-              src={info?.snippet?.thumbnails?.default?.url}
-              alt=""
-              className="channelImage"
-            />
-          </div>
-          <div>
-            <p className="chades">{info?.snippet?.channelTitle}</p>
-            <p className="chades">
+
+      <div className="applyflex">
+        <div className="channelimg">
+          <img
+            src={info?.snippet?.thumbnails?.default?.url}
+            alt=""
+            className="channelImage"
+          />
+        </div>
+        <div>
+          <ul>
+            <li className="channelTitle">
+              <b>{info?.snippet?.title}</b>
+            </li>
+            <li className="chades">{info?.snippet?.channelTitle}</li>
+            <li className="chades">
+              {" "}
               {(info?.statistics?.viewCount)
                 .toString()
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
               views
-            </p>
-          </div>
-        </div> 
-      
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
