@@ -9,6 +9,9 @@ const VideoCart = ({ info }) => {
     return null;
   }
 
+  
+
+
   return (
     <div className="videoCard">
       <img
@@ -28,7 +31,7 @@ const VideoCart = ({ info }) => {
         <div>
           <ul>
             <li className="channelTitle">
-              <b>{info?.snippet?.title}</b>
+              <b>{info?.snippet?.title.split(" ", 12).join(" ") + "..."}</b>
             </li>
             <li className="chades">{info?.snippet?.channelTitle}</li>
             <li className="chades">

@@ -44,3 +44,7 @@ margin: 5px;
     padding: 5px 8px;
     margin: 10px 0px;
 }
+
+.videoCard ul li{
+    margin: 2px; 
+}
