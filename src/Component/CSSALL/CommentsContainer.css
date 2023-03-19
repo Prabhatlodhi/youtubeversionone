@@ -1,0 +1,16 @@
+.commentImage img{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+   
+}
+
+.commentImage{
+    background-color: rgb(221, 221, 221);
+    margin: 9px;
+}
+
+.padd{
+    padding-left: 40px;
+    border-left: 1px solid grey;
+}
