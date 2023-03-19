@@ -92,9 +92,11 @@ const Comment = ({ data }) => {
   const { name, text, reply } = data;
   return (
     <div className="commentImage">
-      <img src={UserImage} alt="" />
       <div>
-        <p>{name}</p>
+      <img src={UserImage} alt="" />
+      </div>
+      <div>
+        <p><b>{name}</b></p>
         <p>{text}</p>
       </div>
     </div>
