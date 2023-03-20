@@ -1,0 +1,27 @@
+.chatmessage img{
+    width: 45px;
+    border-radius: 50%;
+}
+
+.chatmessage{
+    display: flex; 
+    align-items: center;   
+    margin: 5px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.textname{
+    margin: 0px 5px;
+    font-size: 16px;
+}
+ 
+
+.textmessage{
+    font-size: 14px;
+}
+
+.nametext{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}

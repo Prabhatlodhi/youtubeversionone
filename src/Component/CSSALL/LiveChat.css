@@ -1,0 +1,29 @@
+.livechat{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 20px; 
+    width: 520px;
+    height: 500px;
+    padding: 10px 15px;
+    overflow-y: scroll;
+}
+
+.wrapperchat{
+    text-align: center; 
+    margin: 9px 0px;
+}
+
+
+.wrapperchat input{
+    width: 65%;
+    height: 35px;
+    border-radius: 7px;
+}
+
+.wrapperchat button{ 
+    height: 35px; 
+}
+
+form{
+    margin-top: 15px;
+}

@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { closeMenu } from "./Redux/appSlice";
 import "./CSSALL/WatchPage.css"
 import CommentsContainer from "./CommentsContainer";
+import LiveChat from "./LiveChat";
 
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
@@ -13,7 +14,8 @@ const WatchPage = () => {
     dispatch(closeMenu());
   }, []);
   return (
-    <div className="originalvideo">
+    <>
+      <div className="originalvideo">
       <iframe
         width="900"
         height="505"
@@ -26,6 +28,10 @@ const WatchPage = () => {
       ></iframe>
       <CommentsContainer/>
     </div>
+    <div>
+      <LiveChat/>
+    </div>
+    </>
   );
 };
 

@@ -1,3 +1,7 @@
 .body_wrapper{
-    display: flex; 
+    display: flex;   
+    width: 100%;  
+    /* border: 5px solid red; */
+    position: relative;
+    top: 80px;
 }

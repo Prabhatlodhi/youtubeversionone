@@ -1,4 +1,5 @@
 
+export const OFFSET_LIVE_CHAT = 10;
 
 const AUTH_KEY = "AIzaSyD-lLqMQtqXooXhmqn1Vie8OM35iQ49frw"
 
