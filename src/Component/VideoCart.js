@@ -31,7 +31,7 @@ const VideoCart = ({ info }) => {
         <div>
           <ul>
             <li className="channelTitle">
-              <b>{info?.snippet?.title.split(" ", 12).join(" ") + "..."}</b>
+              <b>{info?.snippet?.title.split(" ", 10).join(" ") + "..."}</b>
             </li>
             <li className="chades">{info?.snippet?.channelTitle}</li>
             <li className="chades">
