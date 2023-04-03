@@ -6,7 +6,7 @@ const ChatMessage = ({ name, text }) => {
   return (
     <div className="chatmessage">
       <div>
-        <img src={userImage} alt="" />
+        <img src={userImage} alt={"user_image"} />
       </div>
       <div className="nametext">
         <span className="textname">
