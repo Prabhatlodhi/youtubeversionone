@@ -1,0 +1,29 @@
+name: CI Pipeline  # Pipeline name
+
+on:                # Trigger the workflow on push to master or pull request
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Specify the environment for the job
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Run tests
+        run: npm run test
+
+  deploy:
+    if: github.ref == 'refs/heads/master'  # Only run on master branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        run: npm run deploy
